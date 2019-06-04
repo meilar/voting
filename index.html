@@ -8,13 +8,53 @@
 </head>
 <body>
   <div class="container">
-  <h1>Welcome to the world of voting!</h1>
-  <div id="underage">
-    <p>You are not old enough to vote. However, in order to feel prepared, once you are old enough to become a legally registered voter, here are some resources!</p>
+    <div class="heading">
+      <h1>Political Meter</h1>
+      <p>It can be so hard to understand how what you think means for your politics. Take this short quiz to figure out how you should vote so you never have to think about it again!</p>
+    </div>
+      <div class="quiz-form">
+        <h4>Are you doing okay?</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="okay-check" id="exampleRadios1" value="okay" checked>
+          <label class="form-check-label" for="exampleRadios1">
+            Things are pretty weird, but I'm doing okay.
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="okay-check" id="exampleRadios2" value="not-okay">
+          <label class="form-check-label" for="exampleRadios2">
+            Things are pretty bad, and I am not doing okay.
+          </label>
+        </div>
+      <div class="good-year">
+        <h4>When was America great?</h4>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Enter a year.</label>
+          <input type="text" class="form-control" id="year" placeholder="1990">
+        </div>
+      </div>
+      <div class="submit">
+        <button type="button" class="btn btn-primary">Tell me how to vote!</button>
+      </div>
+      </div>
+      <div class="result" id="ok-past">
+        <p>Looks like you want to rebuild the country. You should vote blue.</p>
+      </div>
+      <div class="result" id="ok-present">
+        <p>I admire your gratitude. You should vote blue.</p>
+      </div>
+      <div class="result" id="ok-future">
+          <p>Your long-term thinking is always needed. You should vote blue.</p>
+      </div>
+      <div class="result" id="nok-past">
+        <p>I'm sorry you think the past was not as hard as the present. You should vote blue.</p>
+      </div>
+      <div class="result" id="nok-present">
+        <p>I'm sorry that you cannot imagine anything better than the present. You should vote blue.</p>
+      </div>
+      <div class="result" id="nok-future">
+          <p>I believe in your vision of a better future. You should vote blue.</p>
+      </div>
   </div>
-  <div id="voter">
-    <p>Congratulations! Since you are old enough to vote, here are some resources to help you find your polling place:</p>
-  </div>
-</div>
 </body>
 </HTML>
